@@ -71,7 +71,7 @@ contract ElectionManager {
         emit StateChanged(ElectionState.Tallying, ElectionState.Completed);
     }
     
-    // 重置选举（仅在完成状态下可调用）- 修改版，清空所有数据
+    // 重置选举（仅在完成状态下可调用）-清空所有数据
     function resetElection() public onlyAdmin inState(ElectionState.Completed) {
         // 重置本合约的状态
         currentState = ElectionState.Initialized;
