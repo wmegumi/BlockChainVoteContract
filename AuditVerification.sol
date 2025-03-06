@@ -106,7 +106,7 @@ contract AuditVerification {
         // 其他验证规则...
         
         // 简化示例
-        return true; // 在实际实现中应该有真正的验证逻辑
+        return true; // 之后再讨论实现形式
     }
     
     // 获取投诉数量
