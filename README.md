@@ -7,12 +7,14 @@
 调用 ElectionManager 的 setContracts 方法，注册所有合约地址
 
 状态转换的流程:
+
 初始状态为 Initialized
 管理员调用 startElection() 进入注册期
 当注册阶段完成时，管理员调用 startVotingPhase() 进入投票期
 当投票阶段完成时，管理员调用 startTallyingPhase() 进入计票期
 当计票阶段完成时，管理员调用 completeElection() 进入完成期
 选举完成后，管理员可以调用 resetElection() 重置系统，准备下一次选举
+
 实际操作：
 
 1.管理员调用 ElectionManager合约的startVotingPhase()进入注册期
